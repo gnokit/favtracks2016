@@ -1,65 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- 
-      https://developer.chrome.com/multidevice/android/installtohomescreen#icon 
-      https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html      
-    -->
-    <link rel="icon" sizes="192x192" href="images/app-icon-large.png">
-    <link rel="icon" sizes="128x128" href="images/app-icon.png">
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-    <link href="touch-icon.ico" rel="shortcut icon">
-
-    <title>Replumbing at 11 Estates</title>
-
-    <!-- Angular -->
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-route.min.js"></script>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- PNotify -->
-    <link href="js/pnotify/dist/pnotify.css" rel="stylesheet">
-    <link href="js/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
-    <link href="js/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/dcsms.css" rel="stylesheet">
-    <!--
-    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
-    -->
-    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/x4AAP9GAAD/EQAA/xEAAP9GAAD/HgAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP9lAAD/7QAA/zkAAP85AAD/7QAA/2UAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/WAAA/5kAAP+WAAD/wwAA//wAAP+wAAD/sAAA//wAAP/DAAD/lgAA/5kAAP9YAAD/AAAA/wAAAP8AAAD/AAAA/5YAAP//AAD/6AAA/+8AAP/+AAD/6wAA/+sAAP/+AAD/7wAA/+gAAP//AAD/lgAA/wAAAP8AAAD/AAAA/wAAAP+YAAD/6AAA/zIAAP93AAD/+AAA/1MAAP9TAAD/+AAA/3cAAP8yAAD/6AAA/5gAAP8AAAD/AAAA/x4AAP9kAAD/wwAA/+8AAP95AAD/egAA/5EAAP8jAAD/IwAA/5EAAP96AAD/eQAA/+8AAP/DAAD/ZAAA/x4AAP9GAAD/7QAA//wAAP/+AAD//QAA/5EAAP8AAAD/AAAA/wAAAP8AAAD/kQAA//0AAP/+AAD//AAA/+0AAP9GAAD/EQAA/zgAAP+wAAD/6wAA/1QAAP8iAAD/AAAA/wAAAP8AAAD/AAAA/yIAAP9UAAD/6wAA/7AAAP84AAD/EQAA/xEAAP84AAD/sAAA/+sAAP9UAAD/IgAA/wAAAP8AAAD/AAAA/wAAAP8iAAD/VAAA/+sAAP+wAAD/OAAA/xEAAP9GAAD/7QAA//wAAP/+AAD//QAA/5EAAP8AAAD/AAAA/wAAAP8AAAD/kQAA//0AAP/+AAD//AAA/+0AAP9GAAD/HgAA/2QAAP/DAAD/7wAA/3kAAP96AAD/kQAA/yMAAP8jAAD/kQAA/3oAAP95AAD/7wAA/8MAAP9kAAD/HgAA/wAAAP8AAAD/mAAA/+gAAP8yAAD/dwAA//gAAP9TAAD/UwAA//gAAP93AAD/MgAA/+gAAP+YAAD/AAAA/wAAAP8AAAD/AAAA/5YAAP//AAD/6AAA/+8AAP/+AAD/6wAA/+sAAP/+AAD/7wAA/+gAAP//AAD/lgAA/wAAAP8AAAD/AAAA/wAAAP9YAAD/mQAA/5YAAP/DAAD//AAA/7AAAP+wAAD//AAA/8MAAP+WAAD/mQAA/1gAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/ZQAA/+0AAP85AAD/OQAA/+0AAP9lAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/x4AAP9GAAD/EQAA/xEAAP9GAAD/HgAA/wAAAAAAAAAAAAAAAAAAAAAA+B8AAPgfAADAAwAAwAMAAMADAAAAAAAAA8AAAAPAAAADwAAAA8AAAAAAAADAAwAAwAMAAMADAAD4HwAA+B8AAA==">    
-    
-    <!--
+  <head>    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    
+    <link rel="shortcut icon" href="/favicon.ico">    
     <link href="static/css/main.615d2802.css" rel="stylesheet">
-
-    <link rel="icon" sizes="192x192" href="app-icon-large.png">
-    <link rel="icon" sizes="128x128" href="app-icon.png">
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-    <link href="touch-icon.ico" rel="shortcut icon">    
     <title>My Favorite Tracks on Spotify 2016</title>
-    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/x4AAP9GAAD/EQAA/xEAAP9GAAD/HgAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP9lAAD/7QAA/zkAAP85AAD/7QAA/2UAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/WAAA/5kAAP+WAAD/wwAA//wAAP+wAAD/sAAA//wAAP/DAAD/lgAA/5kAAP9YAAD/AAAA/wAAAP8AAAD/AAAA/5YAAP//AAD/6AAA/+8AAP/+AAD/6wAA/+sAAP/+AAD/7wAA/+gAAP//AAD/lgAA/wAAAP8AAAD/AAAA/wAAAP+YAAD/6AAA/zIAAP93AAD/+AAA/1MAAP9TAAD/+AAA/3cAAP8yAAD/6AAA/5gAAP8AAAD/AAAA/x4AAP9kAAD/wwAA/+8AAP95AAD/egAA/5EAAP8jAAD/IwAA/5EAAP96AAD/eQAA/+8AAP/DAAD/ZAAA/x4AAP9GAAD/7QAA//wAAP/+AAD//QAA/5EAAP8AAAD/AAAA/wAAAP8AAAD/kQAA//0AAP/+AAD//AAA/+0AAP9GAAD/EQAA/zgAAP+wAAD/6wAA/1QAAP8iAAD/AAAA/wAAAP8AAAD/AAAA/yIAAP9UAAD/6wAA/7AAAP84AAD/EQAA/xEAAP84AAD/sAAA/+sAAP9UAAD/IgAA/wAAAP8AAAD/AAAA/wAAAP8iAAD/VAAA/+sAAP+wAAD/OAAA/xEAAP9GAAD/7QAA//wAAP/+AAD//QAA/5EAAP8AAAD/AAAA/wAAAP8AAAD/kQAA//0AAP/+AAD//AAA/+0AAP9GAAD/HgAA/2QAAP/DAAD/7wAA/3kAAP96AAD/kQAA/yMAAP8jAAD/kQAA/3oAAP95AAD/7wAA/8MAAP9kAAD/HgAA/wAAAP8AAAD/mAAA/+gAAP8yAAD/dwAA//gAAP9TAAD/UwAA//gAAP93AAD/MgAA/+gAAP+YAAD/AAAA/wAAAP8AAAD/AAAA/5YAAP//AAD/6AAA/+8AAP/+AAD/6wAA/+sAAP/+AAD/7wAA/+gAAP//AAD/lgAA/wAAAP8AAAD/AAAA/wAAAP9YAAD/mQAA/5YAAP/DAAD//AAA/7AAAP+wAAD//AAA/8MAAP+WAAD/mQAA/1gAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/ZQAA/+0AAP85AAD/OQAA/+0AAP9lAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/x4AAP9GAAD/EQAA/xEAAP9GAAD/HgAA/wAAAAAAAAAAAAAAAAAAAAAA+B8AAPgfAADAAwAAwAMAAMADAAAAAAAAA8AAAAPAAAADwAAAA8AAAAAAAADAAwAAwAMAAMADAAD4HwAA+B8AAA==">    
--->
   </head>
   <body>
     <div class="jumbotron"><div class="container"><h1><img style="vertical-align:baseline" src="spotify.png"> My Favorite Tracks 2016</h1><p>100 tracks, 6 hours 4 minutes</p></div></div><div id="root" class="container"></div><footer class="footer"><div class="container"><p class="text-muted">&copy; 2016/12/31</p></div></footer><script type="text/javascript" src="static/js/main.557b8f8d.js"></script>
